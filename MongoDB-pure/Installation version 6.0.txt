@@ -1,0 +1,49 @@
+For Windows users  who uses mongodb 6.0!!
+
+
+
+Configuration:
+
+- After installing mongodb-windows-x86_64-6.0.0-signed.msi here is a few steps for finish configuring.
+
+- download mongoshell:
+
+- go to https://www.mongodb.com/try/download/shell and download mongoshell.
+
+- Below is the current version on 19-Aug-2022
+
+  https://downloads.mongodb.com/compass/mongosh-1.5.4-win32-x64.zip
+
+
+
+- Unzip files and place whole package to /c/Program\ Files/MongoDB/ folder (just copy and paste there)
+
+
+
+- As mentioned Angela(here is her link for clearly: https://medium.com/@LondonAppBrewery/how-to-download-install-mongodb-on-windows-4ee4b3493514 ), create .bash_profile file, but instead of pasting two links
+
+showed, you must plase as alias also mongosh.exe file direction.
+
+Here is how it will:
+
+alias mongod="/c/Program\ files/MongoDB/Server/6.0/bin/mongod.exe"
+
+alias mongo="/c/Program\ Files/MongoDB/Server/6.0/bin/mongos.exe"
+
+alias mongosh="/c/Program\ Files/MongoDB/mongosh-1.5.4-win32-x64/bin/mongosh.exe"
+
+
+
+- open hyper terminal
+
+- mongod   // should show waiting for connections port 27017
+
+- ctr+shift+t  // open new editor terminal tab
+
+- mongosh // ready for creating DB
+
+
+
+Congratulations, configuration completed successfully!
+
+- help    // shows available commands
